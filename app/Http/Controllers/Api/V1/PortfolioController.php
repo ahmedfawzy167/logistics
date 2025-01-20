@@ -20,4 +20,9 @@ class PortfolioController extends Controller
         $portfolios = Portfolio::with('image')->get();
         return $this->success(PortfolioResource::collection($portfolios));
     }
+
+    public function show(Portfolio $portfolio)
+    {
+        return $this->success(new PortfolioResource($portfolio));
+    }
 }

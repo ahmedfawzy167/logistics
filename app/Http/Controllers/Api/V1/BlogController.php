@@ -19,4 +19,9 @@ class BlogController extends Controller
         $blogs = Blog::with('image')->get();
         return $this->success(BlogResource::collection($blogs));
     }
+
+    public function show(Blog $blog)
+    {
+        return $this->success(new BlogResource($blog));
+    }
 }

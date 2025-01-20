@@ -61,8 +61,7 @@ return [
     'Bundles'                    =>          'Bundles',
     'All Bundles'                    =>          'All Bundles',
     'No Bundles Found!'  => 'No Bundles Found!',
-
-
+    'feedback' => 'Feedback Created Successfully',
     'No Discounts Found!'  => 'No Discounts Found!',
     'Add New Role'              =>    'Add New Role',
     'Add New Permission'        =>    'Add New Permission',
@@ -71,6 +70,7 @@ return [
     'New Objective'                 =>     'New Objective',
     'Add New Objective'           =>     'Add New Objective',
     'New City'                 =>     'New City',
+    'quote'                 =>      'Quote Created Successfuly',
     'Add New City'           =>     'Add New City',
     'New Roadmap'                 =>     'New Roadmap',
     'Add New Roadmap'           =>     'Add New Roadmap',

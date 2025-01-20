@@ -19,4 +19,9 @@ class ServiceController extends Controller
         $services = Service::all();
         return $this->success(ServiceResource::collection($services));
     }
+
+    public function show(Service $service)
+    {
+        return $this->success(new ServiceResource($service));
+    }
 }
