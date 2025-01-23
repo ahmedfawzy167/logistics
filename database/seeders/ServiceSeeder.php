@@ -14,18 +14,48 @@ class ServiceSeeder extends Seeder
     public function run(): void
     {
         Service::create([
-            'title'  => 'Fast Delivery',
-            'description' => 'It is a long established fact that a reader will be distracted by the readable content layout.',
+            'title'  => 'Air Freight',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
         ]);
 
         Service::create([
-            'title'  => 'Affordable Pricing',
-            'description' => 'It is a long established fact that a reader will be distracted by the readable content layout.',
+            'title'  => 'Ocean Freight',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
         ]);
 
         Service::create([
-            'title'  => 'Warehouse Storage',
-            'description' => 't is a long established fact that a reader will be distracted by the readable content layout.',
+            'title'  => 'Road Freight',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
+        ]);
+
+
+        Service::create([
+            'title'  => 'Warehousing',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
+        ]);
+
+
+        Service::create([
+            'title'  => 'Packaging',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
+        ]);
+
+
+        Service::create([
+            'title'  => 'Shipping',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
+        ]);
+
+
+        Service::create([
+            'title'  => 'Supply Chain',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
+        ]);
+
+
+        Service::create([
+            'title'  => 'Commercial Moves',
+            'description' => 'There are many variations of the majority have suffered alteration in some form by injected.',
         ]);
     }
 }
