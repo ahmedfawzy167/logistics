@@ -26,7 +26,12 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return $this->created(new UserResource($user), __('admin.register'));
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return $this->created([
+            'user' => new UserResource($user),
+            'token' => $token,
+        ], __('admin.register'));
     }
 
     public function login(LoginRequest $request)
