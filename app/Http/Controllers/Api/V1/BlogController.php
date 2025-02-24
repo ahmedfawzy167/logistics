@@ -22,6 +22,7 @@ class BlogController extends Controller
 
     public function show(Blog $blog)
     {
+        $blog->load(['image','author']);
         return $this->success(new BlogResource($blog));
     }
 }
