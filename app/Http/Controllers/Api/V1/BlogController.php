@@ -16,7 +16,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::with('image')->get();
+        $blogs = Blog::with(['image','author'])->get();
         return $this->success(BlogResource::collection($blogs));
     }
 
